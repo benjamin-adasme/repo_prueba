@@ -13,7 +13,7 @@ dl_file <- download.file(url1, destfile = tempfile(fileext = ".xlsx"))
 
 #Método 2
 
-r <- GET(url1, write_disk(path = "C:/Users/19045023/Dropbox/documentos/R y estadística/accidentes", overwrite = T))
+r <- GET(url1, write_disk(path = tempfile(pattern = "file"), overwrite = T))
 
 df <- read_xlsx(tf)
 
