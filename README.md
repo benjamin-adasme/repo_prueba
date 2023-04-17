@@ -9,3 +9,5 @@ Si, esto es markdown. me encanta. Probemos cositas
 - Un elemento
 - otro elemento
 - que lindo esto eeeeh
+
+Ahora estoy editando desde otro repo, en mi escritorio, con Rstudio.
