@@ -1,0 +1,39 @@
+---
+title: "Reporte de prueba"
+author: "B. Adasme"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Inicio
+
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(readxlsb)
+```
+
+
+¿Qué queremos hacer? 
+
+```{r}
+mtcars %>% 
+  tabyl(carb) %>% 
+  knitr::kable()
+```
+
+
+Bien, esto funciona. Probemos con un gráfico de ggplot
+
+```{r}
+
+mtcars %>% 
+  ggplot(aes(mpg)) +
+  geom_histogram()
+```
+
