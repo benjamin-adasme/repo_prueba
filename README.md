@@ -2,7 +2,7 @@
 
 Este es el primer repo que subiré a GitHub
 
-## Probadon md
+## Probando md
 
 Si, esto es markdown. me encanta. Probemos cositas
 
