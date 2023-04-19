@@ -20,3 +20,9 @@ df <- read_xlsx(tf)
 #Método 3
 
 df = read.xlsx(url1)
+
+#Método 4
+
+p1 <- tempfile(fileext = ".xlsb")
+download.file(url1, p1, mode = "wb")
+p2 <- readxl::read_xlsx(path = p1)
